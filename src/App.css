@@ -43,7 +43,7 @@ a{
 
 /* HEADER PART START */
 
-/* Main layout */
+/* Main header layout */
 header{
   background-color:#EEEEEE;
 }
@@ -113,3 +113,31 @@ left:5%;
 }
 
 /* HEADER PART END */
+
+/* MAIN-CONTAINER-START */
+/* Main Layouts */
+.MainContainer {
+  height: 90vh;
+  position: relative;
+  top: -4px;
+  border: solid;
+}
+
+/* InternalLayouts start  */
+.Layout1 {
+  border: solid;
+  height: 50%;
+}
+
+.Layout2 {
+  border: solid green;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+
+/* InternalLayouts end  */
+
+
+/* MAIN-CONTAINER-END */
