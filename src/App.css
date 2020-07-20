@@ -284,10 +284,16 @@ Footer{
 
 .content{
   color:gray;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height:1.5rem;
   position: relative;
-  top:15  px;
+  top:15px;
+}
+
+.Footer-copyright{
+  position: relative;
+  top:60px;
+  color:gray;
 }
 
 /* FOOTER END */
