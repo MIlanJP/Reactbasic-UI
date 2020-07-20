@@ -21,20 +21,20 @@ class Footer extends Component {
         let legal=[]
         this.state.Company.forEach(content=>{
             console.log(content)
-            company.push( <div className='conmpany-content'>{content}</div>)
+            company.push( <a href="#" className='conmpany-content content'>{content}</a>)
          } )  
 
         this.state.Features.forEach(content=>{
             console.log(content)
-            feature.push( <div className='feature-content' >{content}</div>)
+            feature.push( <a  href="#" className='feature-content content ' >{content}</a>)
         })
         this.state.Resources.forEach(content=>{
             console.log(content)
-            resource.push(  <div  className='resource-content' >{content}</div>)
+            resource.push(  <a href="#"  className='resource-content content' >{content}</a>)
         })
         this.state.Legal.forEach(content=>{
             console.log(content)
-            legal.push( <div  className='legal-content' >{content}</div>)
+            legal.push( <a href="#" className='legal-content content' >{content}</a>)
         })
 
         return(
