@@ -3,15 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import CompanyName from './Components/CompanyName';
 import Navbar from './Components/NavBar';
-import Header from './Components/Header'
-import MainContainer from './Components/maincontainer/MainContainer'
-import Footer from "./Components/footer/Footer"
+import MainComponent from './MainComponent'
 function App() {
   return (
     <div className="App">
-  <Header/>
-<MainContainer/>
-<Footer/>
+    <MainComponent/>
     </div>
   );
 }

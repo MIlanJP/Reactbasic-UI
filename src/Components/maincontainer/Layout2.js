@@ -7,6 +7,7 @@ class Layout2 extends Component {
         this.state = {
             details:[{
                 subscription:"Free",
+                title:null,
                 price:"$0",
                 usersIncluded:"10 users included",
                 storage:'2 GB of storage',
@@ -17,6 +18,7 @@ class Layout2 extends Component {
 
             {
                 subscription:"Pro",
+                title:'Most Popular',
                 price:"$15",
                 usersIncluded:"20 users included",
                 storage:'10 GB of storage',
@@ -26,6 +28,7 @@ class Layout2 extends Component {
             },
             {
                 subscription:"Enterprise",
+                title:null,
                 price:"$30",
                 usersIncluded:"50 users included",
                 storage:'30 GB of storage',

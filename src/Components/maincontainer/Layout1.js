@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React  from 'react'
 
-class Layout1 extends Component {
+class Layout1 extends React.Component {
 
 constructor(props){
     super(props)

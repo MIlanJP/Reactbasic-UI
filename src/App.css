@@ -60,7 +60,7 @@ header{
   float:right;
   position:relative;
   top:-40px;
-  left:-10%;
+  left:-13%;
 }
 
 .Header-Layout-LoginButton{
@@ -98,6 +98,8 @@ left:5%;
   line-height: .7rem;
   text-transform:uppercase;
   font-weight: 600;
+  border:none;
+  outline:none;
 }
 
 .Header-Layout-LoginButton button{
@@ -187,14 +189,14 @@ left:5%;
   margin-right: 10px;
 }
 
-/* .Box:hover {
+.Box:hover {
 
   top:-10%;
-  width: 14%;
-  height: 90%;
+  width: 17%;
+  height: 95%;
   font-family: 'Roboto', sans-serif;
   transition: 1s;
-} */
+}
 
 .Box-Top-Portion{
   background-color:#EEEEEE;
@@ -249,6 +251,18 @@ height: 100%;
 transition:1s;
 }
 
+.Subscription-tagline-Pro{
+  font-size: .9rem;
+  background-color:#EEEEEE;
+height:25px;
+}
+
+.Box-Top-Portion-Pro{
+  position:relative;
+  top:-40px;
+  height: 30px;;
+
+}
 
 /* Box OF LAYOUT2 end */
 
@@ -297,3 +311,44 @@ Footer{
 }
 
 /* FOOTER END */
+
+/* EMPLOYEE LIST STARRT */
+.Emp-table-header-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Emp-table{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;;
+}
+
+.Emp-table div{
+  width:100px;
+}
+
+.EmpList-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  box-shadow: 11px 9px 5px 1px #EEEEEE;
+}
+.EmpList-row-content{
+  overflow-wrap: break-word;
+  width:15%;
+  margin-right: 30px;;
+  margin-left: 30px;
+  height:50px;
+}
+
+.EmpList-header{
+  top:20px;
+  position: relative;
+  left:15%;
+  margin-right:80px;
+  margin-left: 80px;
+}
+/* EMPLOYEE LIST END */

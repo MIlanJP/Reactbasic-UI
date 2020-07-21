@@ -4,8 +4,11 @@ class Box extends Component {
     render(){
         return(
             <div className='Box'>
-            <div className='Box-Top-Portion'>
-            {this.props.details.subscription}
+            <div className={`Box-Top-Portion Box-Top-Portion-${this.props.details.subscription}`}>
+            {this.props.details.subscription}<br/>
+           <div className={`Subscription-tagline Subscription-tagline-${this.props.details.subscription}`}>
+           {this.props.details.title}{this.props.details.subscription==='Pro'&& <i class="far fa-star"></i>}
+           </div>
             </div>
             <div className='Box--AmountSection'>
             {this.props.details.price} <span>/mo</span> 
