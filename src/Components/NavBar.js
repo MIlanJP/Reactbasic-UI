@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import MainContainer from './maincontainer/MainContainer'
-
+import {Link} from 'react-router-dom';
 class NavBar extends Component{
     constructor(props){
         super(props)
@@ -18,7 +17,8 @@ class NavBar extends Component{
         let listOfNavBar=[]
         for(let content of this.state.navbar){
             console.log(content)
-            listOfNavBar.push(<button onClick={this.onChangeButton.bind(this,content)}  className='NavBar-content'>{content}</button>)
+            listOfNavBar.push(<Link to={`/${content}`}  className='NavBar-content'>{content}</Link>)
+            // listOfNavBar.push(<a href={`/${content}`}  className='NavBar-content'>{content}</a>)
         }
 
         return (

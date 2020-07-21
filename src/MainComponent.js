@@ -18,22 +18,21 @@ class MainComponent extends Component {
     }
 
 
-    renderPage(){
-        console.log(this.state.page)
-        if(this.state.page==="MainPage") return <Route exact path='/MainPage'
-         component={MainContainer}  />
-        else if(this.state.page==='EmployeeList') return <Route exact path='/EmpList'
-         component={EmpList}  />
-
-    }
+    // renderPage(){
+    //     console.log(this.state.page)
+    //     if(this.state.page==="MainPage") return <Route exact path='/MainPage'
+    //      component={MainContainer}  />
+    //     else if(this.state.page==='EmployeeList') return <Route exact path='/EmpList'
+    //      component={EmpList}  />
+    // }
 
     render(){
         return(
             <div>
             <Header navbar={this.changePage.bind(this)}  />
             <Route exact path='/' component={MainContainer}  />
-            <Route exact path='/MainPage' component={MainContainer}  />
-            <Route exact path='/EmpList'   component={EmpList}  />
+            <Route  exact  path='/MainPage' component={MainContainer}  />
+            <Route exact path='/EmployeeList'   component={EmpList}  />
             <Footer/>
             </div>  
         )
