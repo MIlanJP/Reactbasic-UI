@@ -3,12 +3,13 @@ import Header from './Components/Header'
 import MainContainer from './Components/maincontainer/MainContainer'
 import Footer from "./Components/footer/Footer"
 import EmpList from './Components/Employeelist/EmpList'
+import {Route} from 'react-router-dom'
 class MainComponent extends Component {
 
     constructor(props) {
         super(props);
         this.state={
-            page:"MainContainer"
+            page:"MainPage"
         }
     }
     
@@ -19,8 +20,10 @@ class MainComponent extends Component {
 
     renderPage(){
         console.log(this.state.page)
-        if(this.state.page==="MainPage") return <MainContainer/>
-        else if(this.state.page==='EmployeeList') return <EmpList />
+        if(this.state.page==="MainPage") return <Route exact path='/MainPage'
+         component={MainContainer}  />
+        else if(this.state.page==='EmployeeList') return <Route exact path='/EmpList'
+         component={EmpList}  />
 
     }
 
@@ -28,7 +31,9 @@ class MainComponent extends Component {
         return(
             <div>
             <Header navbar={this.changePage.bind(this)}  />
-            {this.renderPage()}
+            <Route exact path='/' component={MainContainer}  />
+            <Route exact path='/MainPage' component={MainContainer}  />
+            <Route exact path='/EmpList'   component={EmpList}  />
             <Footer/>
             </div>  
         )
