@@ -16,7 +16,6 @@ class NavBar extends Component{
 
         let listOfNavBar=[]
         for(let content of this.state.navbar){
-            console.log(content)
             listOfNavBar.push(<Link to={`/${content}`}  className='NavBar-content'>{content}</Link>)
             // listOfNavBar.push(<a href={`/${content}`}  className='NavBar-content'>{content}</a>)
         }

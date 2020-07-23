@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+
+
+
  class EmpList extends Component{
 
 
     state={
+        newEmp:{},
       employeedetails:  [{
             name: 'Christina Woods',
             email: 'ChristinaWoods@company.com',
@@ -114,6 +118,10 @@ import React, { Component } from 'react'
         header:['Name','Email','Status','Role','Last Login','Permission']
     }
 
+    addEmployee=(newEmp)=>{
+        this.state.employeedetails.push(newEmp);
+    }
+
      render(){
         let header=this.state.header.map(header=>{
             return <div className='EmpList-header' >{header}</div>
@@ -134,8 +142,6 @@ import React, { Component } from 'react'
             <div className='Emp-table-rows' >
             {data}             
             </div>
-             
-            
              </div>
          )
      }
